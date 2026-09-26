@@ -1,0 +1,128 @@
+import { PersonaJourney } from '../types';
+
+export const personasData: PersonaJourney[] = [
+  {
+    id: 'calon_siswa',
+    title: 'Calon Siswa Baru (Lulusan SMP/MTs)',
+    role: 'Siswa SMP kelas IX yang menyukai gadget, robotika, dan teknologi',
+    avatarText: 'CS',
+    keyGoal: 'Mencari tahu apakah jurusan Teknik Elektronika seru, banyak praktik membuat robot/IoT, dan bagaimana cara mendaftar di SMKN 2 Garut.',
+    painPoint: 'Takut materi terlalu teoritis, takut jika harus berhadapan dengan matematika rumit tanpa praktik nyata, dan bingung alur pendaftaran PPDB.',
+    journeySteps: [
+      {
+        stage: '1. Discovery & Ketertarikan',
+        targetMenu: 'Karya IoT & Robotika',
+        targetUrl: '/karya-iot-robotika/galeri-iot',
+        action: 'Melihat galeri proyek keren (robot autonomous line follower, smart farm ESP32 garapan kakak kelas).',
+        expectedOutcome: 'Teryakinkan bahwa jurusan ini aplikatif, modern, dan sangat mengasyikkan.',
+      },
+      {
+        stage: '2. Eksplorasi Kehidupan Siswa',
+        targetMenu: 'Portal Siswa & Layanan',
+        targetUrl: '/layanan-siswa/klub-robotika',
+        action: 'Mengecek kegiatan ekstrakurikuler klub robotika dan keseruan kontes.',
+        expectedOutcome: 'Melihat komunitas sebaya yang aktif dan suportif untuk mengasah hobi elektronika.',
+      },
+      {
+        stage: '3. Keputusan Pendaftaran',
+        targetMenu: 'PPDB & Calon Siswa',
+        targetUrl: '/ppdb/jalur-dan-syarat',
+        action: 'Membaca jadwal pendaftaran, persyaratan raport/kejuaraan, dan syarat tidak buta warna.',
+        expectedOutcome: 'Menyiapkan berkas dan mengunci pilihan pertama di SMKN 2 Garut.',
+      },
+    ],
+  },
+  {
+    id: 'orang_tua',
+    title: 'Orang Tua Murid',
+    role: 'Orang tua / wali yang menginginkan masa depan mandiri & berakhlak bagi anaknya',
+    avatarText: 'OT',
+    keyGoal: 'Memastikan jurusan ini memiliki prospek kerja jelas, lingkungan belajar aman (K3), biaya transparan (gratis SPP), dan peluang kuliah.',
+    painPoint: 'Khawatir anak kesulitan mencari kerja setelah lulus, takut risiko kecelakaan tersetrum di bengkel, dan khawatir biaya praktik mahal.',
+    journeySteps: [
+      {
+        stage: '1. Verifikasi Kredibilitas & Prospek',
+        targetMenu: 'Profil & Akademik',
+        targetUrl: '/profil/tentang-jurusan',
+        action: 'Mengecek akreditasi jurusan (A), legalitas SMKN 2 Garut, dan visi pembinaan karakter 5R.',
+        expectedOutcome: 'Percaya bahwa institusi memiliki reputasi unggul di wilayah Priangan Timur.',
+      },
+      {
+        stage: '2. Jaminan Keamanan & Fasilitas',
+        targetMenu: 'Bengkel & Fasilitas',
+        targetUrl: '/bengkel-fasilitas/standar-k3-5r',
+        action: 'Membaca standar keselamatan kerja (K3 listrik, ESD grounding, APD, pemadam api).',
+        expectedOutcome: 'Ketenangan hati bahwa putra-putrinya belajar di lingkungan bengkel yang aman dan teruji.',
+      },
+      {
+        stage: '3. Kepastian Biaya & Karir',
+        targetMenu: 'PPDB & Kemitraan',
+        targetUrl: '/ppdb/biaya-dan-beasiswa',
+        action: 'Membaca transparansi bebas SPP di SMK Negeri Jabar, beasiswa KIP, dan data serapan kerja via BKK.',
+        expectedOutcome: 'Memberikan restu dan dorongan penuh kepada anak untuk mendaftar.',
+      },
+    ],
+  },
+  {
+    id: 'industri',
+    title: 'Industri Mitra & DUDIKA (HR / Technical Lead)',
+    role: 'Pimpinan HR, Manager Produksi, atau Instruktur Perusahaan Manufaktur/Otomasi',
+    avatarText: 'IM',
+    keyGoal: 'Merekrut teknisi elektronika kompeten bersertifikasi BNSP dan menjalin kemitraan magang PKL 6 bulan berkualitas.',
+    painPoint: 'Lulusan SMK sering kurang menguasai PLC modern, tidak terbiasa standar 5R pabrik, atau sulit menghubungi pihak sekolah untuk rekrutmen.',
+    journeySteps: [
+      {
+        stage: '1. Penilaian Kualitas Fasilitas & Skill',
+        targetMenu: 'Bengkel & Fasilitas',
+        targetUrl: '/bengkel-fasilitas/bengkel-otomasi-plc',
+        action: 'Melihat peralatan praktik: PLC Siemens S7-1200, pneumatik Festo, dan osiloskop digital yang digunakan.',
+        expectedOutcome: 'Memvalidasi bahwa standar fasilitas sekolah sejalan dengan mesin di lini produksi industri.',
+      },
+      {
+        stage: '2. Evaluasi Portofolio Lulusan',
+        targetMenu: 'Karya IoT & Robotika',
+        targetUrl: '/karya-iot-robotika/produk-tefa',
+        action: 'Menelaah kualitas karya tugas akhir, kemampuan soldering SMD, dan pemahaman pemrograman mikrokontroler.',
+        expectedOutcome: 'Melihat bukti empiris bahwa siswa mampu menyelesaikan masalah rekayasa nyata.',
+      },
+      {
+        stage: '3. Tindakan Kerjasama & Rekrutmen',
+        targetMenu: 'Kemitraan & Karir (PKL)',
+        targetUrl: '/kemitraan-industri/pengajuan-kerjasama',
+        action: 'Mengisi formulir pengajuan kerjasama baru atau memasang informasi rekrutmen teknisi di BKK.',
+        expectedOutcome: 'Terhubung langsung dengan Ketua Program Keahlian / Pokja BKK SMKN 2 Garut.',
+      },
+    ],
+  },
+  {
+    id: 'siswa_aktif',
+    title: 'Siswa Aktif & Pengajar (Kelas X, XI, XII)',
+    role: 'Siswa jurusan Teknik Elektronika SMKN 2 Garut yang aktif belajar praktikum',
+    avatarText: 'SA',
+    keyGoal: 'Mengakses kebutuhan praktikum harian: jadwal bengkel, form peminjaman toolkit, download jobsheet, dan submit karya tugas akhir.',
+    painPoint: 'Antrean manual peminjaman alat yang memakan waktu, kehilangan file jobsheet kertas, dan kebingungan mencari slot meja kerja kosong.',
+    journeySteps: [
+      {
+        stage: '1. Persiapan Praktikum',
+        targetMenu: 'Portal Siswa & Layanan',
+        targetUrl: '/layanan-siswa/unduh-modul-jobsheet',
+        action: 'Mengunduh PDF jobsheet praktikum rangkaian analog atau pemrograman Arduino.',
+        expectedOutcome: 'Bisa mempelajari skematik sebelum masuk jam bengkel.',
+      },
+      {
+        stage: '2. Peminjaman Alat Bengkel',
+        targetMenu: 'Portal Siswa & Layanan',
+        targetUrl: '/layanan-siswa/peminjaman-alat',
+        action: 'Mengisi form peminjaman multimeter digital atau stasiun solder untuk proyek kelas.',
+        expectedOutcome: 'Mendapat konfirmasi peminjaman alat secara rapi dan terdokumentasi.',
+      },
+      {
+        stage: '3. Apresiasi & Publikasi Karya',
+        targetMenu: 'Karya IoT & Robotika',
+        targetUrl: '/karya-iot-robotika/submit-karya',
+        action: 'Mengunggah dokumentasi proyek IoT tugas akhir yang telah diuji untuk etalase web sekolah.',
+        expectedOutcome: 'Karya terpublikasi resmi sebagai portofolio digital untuk melamar kerja/kuliah.',
+      },
+    ],
+  },
+];

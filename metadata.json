@@ -1,0 +1,6 @@
+{
+  "name": "Arsitektur Informasi & Portal Teknik Elektronika SMKN 2 Garut",
+  "description": "Struktur Arsitektur Informasi (Sitemap) dan Portal Resmi Jurusan Teknik Elektronika SMKN 2 Garut dengan Showcase IoT, Robotika, Fasilitas Bengkel, dan Hub Kemitraan Industri.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
